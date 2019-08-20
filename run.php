@@ -136,6 +136,8 @@ if ($register == false)
 		  else
 			{
 			echo $claim . "\n";
+		}
+echo "ready to claim 2\n";
 echo "jeda 15 detik\n";
 sleep(15);
  $claim1 = claim1($verif);
@@ -146,8 +148,8 @@ echo "Failed to Claim Voucher, Try to Claim Manually\n";
 			{
 			echo $claim1 . "\n";
 			}
-		}
-	} }
+	}
+ }
 }else if($type == 1){
 echo "It's Login Way\n";
 echo "Input 62 For ID and 1 For US Phone Number\n";
@@ -179,7 +181,10 @@ if ($login == false)
 		  else
 			{
 			echo $claim . "\n";
-sleep(10);
+			}
+echo "ready to claim 2\n";
+echo "jeda 15 detik\n";
+sleep(15);
  $claim1 = claim1($verif);
 if (!$claim1)  {
 echo "Failed to Claim Voucher, Try to Claim Manually\n";
@@ -187,10 +192,10 @@ echo "Failed to Claim Voucher, Try to Claim Manually\n";
 		  else
 			{
 			echo $claim1 . "\n";
-}
 			}
 		}
 	}	
 }
 ?>
+
 
