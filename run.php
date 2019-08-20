@@ -93,10 +93,10 @@ function claim($token)
 function claim1($token)
 	{
 	$data1 = '{"promo_code":"AYOMERDEKA"}';
-	$claim = request("/go-promotions/v1/promotions/enrollments", $token, $data1);
-	if ($claim['success'] == 1)
+	$claim1 = request("/go-promotions/v1/promotions/enrollments", $token, $data1);
+	if ($claim1['success'] == 1)
 		{
-		return $claim['data']['message'];
+		return $claim1['data']['message'];
 		}
 	  else
 		{
